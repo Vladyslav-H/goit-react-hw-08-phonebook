@@ -13,7 +13,7 @@ flex-direction: column;
 align-items: center;
 gap: 20px;
 border-radius: 5px;
-background-color: #79c753;
+background-color: rgba(121, 199, 83, 0.8);
 `
 
 export const LabelStyled = styled.label`

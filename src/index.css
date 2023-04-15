@@ -8,6 +8,13 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background: #0a6c94;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url('./images/bg-img.jpg ');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+width: 100vw;
+height: 100vh;
   text-align: center;
 }
 

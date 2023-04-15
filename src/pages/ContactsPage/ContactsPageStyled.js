@@ -9,15 +9,14 @@ export const Container = styled.div`
 
 export const ContactContainer = styled.div`
   min-width: 400px;
-  min-height: 250px;
+  max-height: 350px;
   padding: 20px;
   display: flex;
   align-items: center;
   flex-direction: column;
-  background-color: #e0a219;
+  background-color:  rgb(224, 162, 25, 0.7);
   border-radius: 15px;
+  overflow: auto;
 `;
 
-export const Title = styled.h1`
-  font-size: 40px;
-`;
+

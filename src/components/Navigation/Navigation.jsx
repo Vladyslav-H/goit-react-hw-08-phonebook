@@ -8,7 +8,8 @@ const Navigation = () => {
   return (
     <NavContainer>
       {isLogin ? (
-        <MainLink to="/contacts">Contacts</MainLink>
+              <><MainLink to="/contacts">Contacts</MainLink>
+              <MainLink to="/profile">Profile</MainLink></>
       ) : (
         <>
           <MainLink to="/register">Register</MainLink>

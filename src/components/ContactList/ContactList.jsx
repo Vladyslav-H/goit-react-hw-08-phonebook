@@ -35,11 +35,11 @@ const ContactList = () => {
       ) : !newContactsList.length ? (
         <h3>No matches found</h3>
       ) : (
-        newContactsList.map(({ id, name, phone }) => (
+        newContactsList.map(({ id, name, number }) => (
           <ContactItem
             key={id}
             name={name}
-            number={phone}
+            number={number}
             id={id}
           ></ContactItem>
         ))

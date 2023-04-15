@@ -16,5 +16,5 @@ export const FormIconStyled = {
   left: '24px',
   width: '78px',
   height: 'auto',
-  fill: '#94715f',
+  fill: 'rgb(102, 51, 0)',
 };

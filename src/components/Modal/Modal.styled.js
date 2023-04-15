@@ -16,7 +16,7 @@ export const ModalWrapp = styled.div`
   justify-content: space-around;
   border-radius: 5px;
   color: #fcf189;
-  background-color: #ff6666;
+  background-color: rgb(255, 102, 102,0.9);
   box-shadow: 0px 0px 11px 0px rgba(0, 0, 0, 0.75);
 `;
 
