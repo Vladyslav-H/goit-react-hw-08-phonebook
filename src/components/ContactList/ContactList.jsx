@@ -9,8 +9,8 @@ import { getContacts } from 'redux/contacts/contactsOperations';
   selectContacts,
   selectError,
   selectIsLoading,
-  filtedContacts,
-} from 'redux/contacts/contactsSelector';
+  filtredContacts,
+} from 'redux/contacts/contactsSelectors';
 
 const ContactList = () => {
   const contacts = useSelector(selectContacts);
@@ -23,7 +23,7 @@ const ContactList = () => {
     dispatch(getContacts());
   }, [dispatch]);
 
-  const newContactsList = useSelector(filtedContacts) 
+  const newContactsList = useSelector(filtredContacts) 
   return (
     <ul>
       {isLoading ? (

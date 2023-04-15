@@ -1,8 +1,9 @@
 import { useSelector } from 'react-redux';
 import { ProfileOverlay, ProfileWrapp, InfoStyled } from './ProfilePage.styled';
+import { selectUser } from 'redux/auth/authSelectors';
 
 const ProfilePage = () => {
-  const user = useSelector(state => state.auth.user);
+  const user = useSelector(selectUser);
   return (
     <ProfileOverlay>
       <ProfileWrapp>

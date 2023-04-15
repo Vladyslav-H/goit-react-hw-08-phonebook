@@ -20,7 +20,7 @@ import storage from 'redux-persist/lib/storage';
 const persistConfig = {
   key: 'user',
   storage,
-  // whitelist: [],
+  whitelist: ['user', 'token'],
 };
 
 const persistedReducer = persistReducer(persistConfig, authReducer);
@@ -37,6 +37,6 @@ export const store = configureStore({
         ignoredActions: [FLUSH, REHYDRATE, PAUSE, PERSIST, PURGE, REGISTER],
       },
     }),
-   devTools: process.env.NODE_ENV !== "production",
+  devTools: process.env.NODE_ENV !== 'production',
 });
 export const persistor = persistStore(store);

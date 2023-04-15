@@ -1,5 +1,10 @@
-import { createSlice, current } from '@reduxjs/toolkit';
-import { registerUser, logIn, logOut, fetchCurrerntUser } from './authOperation';
+import { createSlice } from '@reduxjs/toolkit';
+import {
+  registerUser,
+  logIn,
+  logOut,
+  fetchCurrerntUser,
+} from './authOperation';
 
 const initialState = {
   user: { name: null, email: null },
@@ -11,10 +16,10 @@ const initialState = {
 
 const authSlise = createSlice({
   name: 'auth',
-    initialState: initialState,
+  initialState: initialState,
 
   extraReducers: {
-    [registerUser.pending](state, action) {
+    [registerUser.pending](state) {
       state.isLoading = true;
       state.error = null;
     },
@@ -24,19 +29,27 @@ const authSlise = createSlice({
       state.isLogin = true;
       state.isLoading = false;
     },
-    // [registerUser.rejected](state, action) {
-    //   state.error = action.payload.error;
-    //   state.isLoading = false;
-    // },
+    [registerUser.rejected](state, action) {
+      state.error = action.payload;
+      state.isLoading = false;
+    },
+
+    [logIn.pending](state) {
+      state.isLoading = true;
+      state.error = null;
+    },
 
     [logIn.fulfilled](state, action) {
-      console.log(action.payload);
-      console.log(current(state));
       state.token = action.payload.token;
       state.user = action.payload.user;
       state.isLogin = true;
       state.isLoading = false;
     },
+    [logIn.rejected](state, action) {
+      state.error = action.payload;
+      state.isLoading = false;
+    },
+
     [logOut.fulfilled](state) {
       state.isLogin = false;
       state.token = null;
@@ -46,7 +59,7 @@ const authSlise = createSlice({
       console.log(action);
       // state.user = action.payload;
       state.isLogin = true;
-    }
+    },
   },
 });
 
