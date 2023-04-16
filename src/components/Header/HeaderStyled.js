@@ -1,8 +1,10 @@
 import styled from 'styled-components';
 
 export const HeaderStyled = styled.header`
+  position: relative;
+  z-index: 1;
   height: 100px;
-  padding: 0 30px;
+  padding: 0 100px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -25,8 +27,7 @@ export const LogInfo = styled.p`
 export const LogOutButton = styled.button`
   min-width: 80px;
   height: 30px;
-  margin-left: 15px;
-  /* margin-right: auto;  */
+  margin-left: 25px;
   padding: 0;
   display: flex;
   align-items: center;
@@ -43,7 +44,6 @@ export const LogOutButton = styled.button`
 
   &:hover {
     color: #e85d04;
-    /* background-color: #ffc459; */
     transform: scale(1.05);
   }
 `;

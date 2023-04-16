@@ -5,7 +5,7 @@ import Loader from 'components/Loader/Loader';
 
 import ContactItem from 'components/ContactItem/ContactItem';
 import { getContacts } from 'redux/contacts/contactsOperations';
- import {
+import {
   selectContacts,
   selectError,
   selectIsLoading,
@@ -16,14 +16,14 @@ const ContactList = () => {
   const contacts = useSelector(selectContacts);
   const isLoading = useSelector(selectIsLoading);
   const error = useSelector(selectError);
- 
+
   const dispatch = useDispatch();
 
   useEffect(() => {
     dispatch(getContacts());
   }, [dispatch]);
 
-  const newContactsList = useSelector(filtredContacts) 
+  const newContactsList = useSelector(filtredContacts);
   return (
     <ul>
       {isLoading ? (

@@ -1,6 +1,8 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 export const Title = styled.h1`
   font-size: 40px;
-  margin-top:100px;
+  margin-top: 100px;
+  color: #fff;
+  text-decoration: underline;
 `;

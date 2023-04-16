@@ -59,9 +59,9 @@ export const ContactItemStyled = styled.li`
 
 export const ItemWrap = styled.div`
   display: flex;
-
   gap: 5px;
 `;
+
 export const ContactWrap = styled(ItemWrap)`
   flex-direction: column;
 `;

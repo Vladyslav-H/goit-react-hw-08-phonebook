@@ -1,7 +1,7 @@
 import { NavLink } from 'react-router-dom';
 import styled from 'styled-components';
 
-export const NavContainer = styled.div`
+export const NavContainer = styled.nav`
   display: flex;
 `;
 
@@ -14,12 +14,12 @@ export const MainLink = styled(NavLink)`
   font-weight: 500;
   transition: all 250ms linear;
 
-  &:hover {
+  &:hover  {
     color: #e85d04;
     scale: 1.1;
   }
 
   &:not(:first-child) {
-    margin-left: 15px;
+    margin-left: 25px;
   }
 `;

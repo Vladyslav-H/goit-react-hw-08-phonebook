@@ -2,7 +2,6 @@ import { useSelector } from 'react-redux';
 import { NavContainer, MainLink } from './NavigationStytled';
 import { selectIsLogin } from 'redux/auth/authSelectors';
 
-// const { Link } = require("react-router-dom")
 
 const Navigation = () => {
   const isLogin = useSelector(selectIsLogin);

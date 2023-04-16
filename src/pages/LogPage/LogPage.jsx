@@ -15,7 +15,7 @@ const LogPage = () => {
   const [password, setPassword] = useState('');
 
   const authError = useSelector(selectError);
-console.log(authError);
+
   const dispatch = useDispatch();
 
   const handleInputChange = e => {
@@ -69,8 +69,8 @@ console.log(authError);
           </LabelStyled>
           <ButtonStyled type="submit">Login</ButtonStyled>
         </FormLogin>
-      ) : (<ErrorModal message={authError}/>
-       
+      ) : (
+        <ErrorModal message={authError} />
       )}
     </>
   );

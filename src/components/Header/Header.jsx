@@ -17,7 +17,7 @@ const Header = () => {
         <Wrapp>
           <LogInfo>
             You you are logged in as{' '}
-            <span style={{ fontWeight: 700 }}>{name}</span>
+            <span style={{ fontWeight: 700,   textDecoration: 'underline' }}>{name}</span>
           </LogInfo>
           <LogOutButton onClick={() => dispatch(logOut())}>
             Log out
