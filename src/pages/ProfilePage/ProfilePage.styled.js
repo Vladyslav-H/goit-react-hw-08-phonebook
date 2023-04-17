@@ -5,16 +5,17 @@ export const ProfileOverlay = styled.div`
   top: 0;
   width: 100%;
   height: 100vh;
-  display: flex;
-  align-items: center;
-  background-color: rgba(237, 255, 0, 0.3);
+  padding: 150px 100px;
+  box-sizing: border-box;
+  background: linear-gradient(
+    360deg,
+    rgba(237, 255, 0, 0.5) 23%,
+    rgba(9, 9, 121, 0.5) 50%
+  );
 `;
 
 export const ProfileWrapp = styled.div`
   width: 400px;
-  margin-top: 50px;
-  margin-left: auto;
-  margin-right: auto;
   padding: 20px;
   color: #fff;
   border: 1px solid #fff;
