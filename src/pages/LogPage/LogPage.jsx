@@ -60,7 +60,7 @@ const LogPage = () => {
           <LabelStyled>
             <span>Password</span>
             <InputStyled
-              type="tel"
+              type="password"
               name="password"
               placeholder="password"
               value={password}

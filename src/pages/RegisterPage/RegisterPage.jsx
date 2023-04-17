@@ -77,7 +77,7 @@ const RegisterPage = () => {
           <LabelStyled>
             <span>Password</span>
             <InputStyled
-              type="text"
+              type="password"
               name="password"
               placeholder="password"
               value={password}
